@@ -10,6 +10,7 @@ MORSE_CODE_DICT = {
 }
 
 def text_to_morse(text):
+    #function to convert text into morse code
     morse = ''
     for char in text.upper():
         if char in MORSE_CODE_DICT:
@@ -19,6 +20,7 @@ def text_to_morse(text):
     return morse
 
 def morse_to_text(morse):
+    #function to convert morse code into text
     text = ''
     morse_code = morse.split(' ')
     for code in morse_code:
